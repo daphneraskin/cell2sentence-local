@@ -1,1 +1,20 @@
 CellOT_files/
+# Large data files
+CellOT_files/cell_ot_processed_data.zip
+CellOT_files/datasets/**/*.h5ad
+CellOT_files/pancreas_data/**/*.h5ad
+CellOT_files/pancreas_data/**/*.npy
+CellOT_files/pancreas_training_runs/**/cache/*.pt
+
+# Cinema OT large files
+Cinema_OT_on_Cell_Embeddings/data/**/*.arrow
+
+# Additional data directories
+Daphne_CellOT_Files/**/*.h5ad
+Syed_CellOT_Code/datasets/**/*.h5ad
+
+# General patterns for large files
+**/*.h5ad
+**/*.pt
+**/*.arrow
+**/*.npy
