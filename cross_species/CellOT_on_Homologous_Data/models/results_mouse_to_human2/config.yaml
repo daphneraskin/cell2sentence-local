@@ -1,0 +1,43 @@
+data:
+  condition: species_label
+  dimension_reduction:
+    name: harmony
+  path: /home/dor3/cell2sentence/cross_species/Syed_CellOT_Code/datasets/harmony_common_pancreas_20241025.h5ad
+  source: mouse
+  target: human
+  type: cell
+dataloader:
+  batch_size: 256
+  shuffle: true
+datasplit:
+  eval_size: 500
+  groupby: species_label
+  name: train_test_eval
+  random_state: 0
+  test_size: 500
+model:
+  g:
+    fnorm_penalty: 1
+  hidden_units:
+  - 64
+  - 64
+  - 64
+  - 64
+  kernel_init_fxn:
+    b: 0.1
+    name: uniform
+  latent_dim: 50
+  name: cellot
+  softplus_W_kernels: false
+optim:
+  beta1: 0.5
+  beta2: 0.9
+  lr: 0.0001
+  optimizer: Adam
+  weight_decay: 0
+training:
+  cache_freq: 1000
+  eval_freq: 250
+  logs_freq: 50
+  n_inner_iters: 10
+  n_iters: 500000
