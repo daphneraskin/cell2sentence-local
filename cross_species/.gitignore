@@ -1,6 +1,12 @@
+Embedded_Cells/
 CellOT_files/
+Daphne_CellOT_Files/
+Miniconda3-latest-Linux-x86_64.sh
+cellot.egg-info/
+
 # Large data files
 CellOT_files/cell_ot_processed_data.zip
+CellOT_on_Homologous_Data/models/
 CellOT_files/datasets/**/*.h5ad
 CellOT_files/pancreas_data/**/*.h5ad
 CellOT_files/pancreas_data/**/*.npy
@@ -12,6 +18,7 @@ Cinema_OT_on_Cell_Embeddings/data/**/*.arrow
 # Additional data directories
 Daphne_CellOT_Files/**/*.h5ad
 Syed_CellOT_Code/datasets/**/*.h5ad
+
 
 # General patterns for large files
 **/*.h5ad

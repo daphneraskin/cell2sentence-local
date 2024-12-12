@@ -29,6 +29,6 @@ export PYTHONPATH="/home/dor3/cell2sentence/cross_species/Syed_CellOT_Code"
 # /home/dor3/cell2sentence/cross_species/Syed_CellOT_Code/configs/tasks/pancreas_cross_species_X_harmony_mouse_to_human.yaml
 
 python scripts/evaluate.py \
---outdir "/home/dor3/cell2sentence/cross_species/CellOT_on_Homologous_Data/results_mouse_to_human" \
+--outdir "/home/dor3/cell2sentence/cross_species/CellOT_on_Homologous_Data/models/results_mouse_to_human2" \
 --setting iid \
 --where data_space

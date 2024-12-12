@@ -40,4 +40,4 @@ training:
   eval_freq: 250
   logs_freq: 50
   n_inner_iters: 10
-  n_iters: 500000
+  n_iters: 100000
